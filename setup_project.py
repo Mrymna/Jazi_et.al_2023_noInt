@@ -43,8 +43,8 @@ from spikeA.Spike_waveform import Spike_waveform
 # a mixed class
 from neuronAutopi import NeuronAutopi
 
+from setup_path import *
 
-allDataPath = "~/repo/Jazi_et.al_2023_noInt/data/Jazi_etal_2023_noInter"
 projectName="autopi_ca1"
 dataPath = allDataPath + "/" + projectName # this is for ca1
 
