@@ -44,10 +44,9 @@ from spikeA.Spike_waveform import Spike_waveform
 from neuronAutopi import NeuronAutopi
 
 
-
-
+allDataPath = "~/repo/Jazi_et.al_2023_noInt/data/Jazi_etal_2023_noInter"
 projectName="autopi_ca1"
-dataPath="/ext_drives/d80/Jazi_etal_2023_noInter/autopi_ca1"
+dataPath = allDataPath + "/" + projectName # this is for ca1
 
 myProject = Project(name=projectName,dataPath=dataPath)
 
@@ -501,7 +500,8 @@ def loadMyProjectWithTrials(myProject):
     Get the myProject object with the trial extraction already done
     All the navPaths are already there.
     """
-    fn="/ext_drives/d80/Jazi_etal_2023_noInter/autopi_ca1/results/myProjectWithTrials.pickle"
+    #fn="/ext_drives/d80/Jazi_etal_2023_noInter/autopi_ca1/results/myProjectWithTrials.pickle"
+    fn = dataPath+"/results/myProjectWithTrials.pickle"
     #fn="/home/maryam/repo/autopi_analysis/Jazi_et.al_2023/trials/myProjectWithTrials.pickle"
     print("Loading:",fn)
     with open(fn, 'rb') as handle:
