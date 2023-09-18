@@ -26,6 +26,17 @@ python3 -m venv ~/python_virtual_environments/Jazi2023Env
 source ~/python_virtual_environments/Jazi2023Env/bin/activate
 ```
 
+make venv available for jupyter notebook
+```
+pip install --user ipykernel
+python -m ipykernel install --user --name=Jazi2023Env
+```
+
+run jupyter notebook
+```
+jupyter notebook
+```
+
 #### install additional software
 
 ```
