@@ -32,9 +32,10 @@ pip install --user ipykernel
 python -m ipykernel install --user --name=Jazi2023Env
 ```
 
-run jupyter notebook
+run jupyter lab or notebook
 ```
-jupyter notebook
+jupyter lab
+# jupyter notebook
 ```
 
 #### install additional software
