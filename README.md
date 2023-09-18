@@ -14,10 +14,8 @@ The environment we use to run these notebooks is a single Python virtual environ
 
 Figures 1 and 2 contain a code to generate the first two main figures plus the first 4 Extended data figures. These figures are generated from only behavioural recordings from the ```autopi_behavior_2021``` dataset. ExtendedDataFig.5 is related to the control odour experiment and only includes behavioural data. The rest of the figures are generated from ```autopi_ca1```. Some extended data figures were generated in the notebook related to its main figure.
 
-Please, before running any code, change ```allDataPath``` to the relative directory where you cloned the repository in the ```setup_project.py``` and ```setup_behaviour.py```. 
-
-
-1.  For example from ```~/repo/Jazi_et.al_2023_noInt/data/Jazi_etal_2023_noInter``` to ``` ~.../Jazi_etal_2023_noInter/```. 
+Please, before running any code, change ```allDataPath``` in ```setup_path.py``` to the path where you cloned the data directory.
+Per default it is ```~/repo/Jazi_et.al_2023_noInt/data/Jazi_etal_2023_noInter```.
 
 
 #### create virtual env for this project
