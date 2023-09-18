@@ -19,3 +19,24 @@ Please, before running any code, change ```allDataPath``` to the relative direct
 
 1.  For example from ```~/repo/Jazi_et.al_2023_noInt/data/Jazi_etal_2023_noInter``` to ``` ~.../Jazi_etal_2023_noInter/```. 
 
+
+#### create virtual env for this project
+
+```
+mkdir ~/python_virtual_environments
+python3 -m venv ~/python_virtual_environments/Jazi2023Env
+source ~/python_virtual_environments/Jazi2023Env/bin/activate
+```
+
+#### install additional software
+
+```
+cd ~/repo
+git clone https://github.com/kevin-allen/spikeA.git
+git clone https://github.com/kevin-allen/autopipy.git
+
+pip install --upgrade pip
+
+pip install -e ~/repo/spikeA
+pip install -e ~/repo/autopipy
+```
