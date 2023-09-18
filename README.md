@@ -37,4 +37,8 @@ pip install --upgrade pip
 
 pip install -e ~/repo/spikeA
 pip install -e ~/repo/autopipy
+
+# in order to work with the pickle files, you need this version of autopipy, run that command in the ~/repo/autopipy directory (where you cloned the repo)
+git checkout 91e6bf671731119f067a65ce7a97f00bbd427ed0 .
+
 ```
