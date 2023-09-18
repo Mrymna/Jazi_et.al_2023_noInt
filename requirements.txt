@@ -1,2 +1,5 @@
+numpy<1.23
 seaborn
 pandas<2.0.0
+sklearn
+
