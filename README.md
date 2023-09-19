@@ -12,6 +12,9 @@ The environment we use to run these notebooks is a single Python virtual environ
 
 3. Autopipy https://github.com/kevin-allen/autopipy
 
+4. Download the database from datadryad with this address: https://doi.org/10.5061/dryad.crjdfn39x
+
+
 Figures 1 and 2 contain a code to generate the first two main figures plus the first 4 Extended data figures. These figures are generated from only behavioural recordings from the ```autopi_behavior_2021``` dataset. ExtendedDataFig.5 is related to the control odour experiment and only includes behavioural data. The rest of the figures are generated from ```autopi_ca1```. Some extended data figures were generated in the notebook related to its main figure.
 
 Please, before running any code, change ```allDataPath``` to the relative directory where you cloned the repository in the ```setup_project.py``` and ```setup_behaviour.py```. 
