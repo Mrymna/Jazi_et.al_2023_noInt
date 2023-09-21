@@ -1,5 +1,6 @@
 # Jazi_et.al_2023_noInt
 
+
 This repository includes the Python scripts and notebooks used to analyze data and generate figures for the manuscript from M.N.Jazi and colleagues, 2023, titled 'Hippocampal firing fields anchored to a moving object predict homing direction during path-integration-based behaviour.'
 
 
@@ -71,11 +72,37 @@ jupyter lab
 # jupyter notebook
 ```
 
-
 ## Install the spikeA and autopipy python packages
+
 
 spikeA: https://github.com/kevin-allen/spikeA
 autopipy: https://github.com/kevin-allen/autopipy
 
 
 Make sure your environment is activated and install the two packages.
+
+```
+pip install --upgrade pip
+cd ~/repo
+git clone https://github.com/kevin-allen/spikeA.git
+cd ~/repo/spikeA
+pip install -r requirements.txt
+pip install -e ~/repo/spikeA
+cd ~/repo/spikeA/spikeA/
+python setup.py build_ext --inplace
+```
+
+
+```
+cd ~/repo
+git clone https://github.com/kevin-allen/autopipy.git
+git checkout 91e6bf671731119f067a65ce7a97f00bbd427ed0
+pip install -e ~/repo/autopipy
+```
+
+# File description 
+
+`/fig1/Figure1.ipynb` and `/fig2/Figure2.ipynb` contain the code to generate the first two main figures plus the first 4 Extended data figures. These figures are generated from behavioral data located in the ```autopi_behavior_2021``` dataset. `/ExtDataFig5/Olfac_perMouse.ipynb` is related to the control odour experiment and only includes behavioural data. The rest of the figures are generated from ```autopi_ca1```. Some extended data figures were generated in the notebook related to its main figure.
+
+
+Please, before running any code, change ```allDataPath``` in ```setup_path.py``` to the path where you cloned the data directory. Per default it is ```~/repo/Jazi_et.al_2023_noInt/data/Jazi_etal_2023_noInter```.
